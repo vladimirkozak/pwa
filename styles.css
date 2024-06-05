@@ -124,9 +124,3 @@ body > #toolbar {
     display: none;
   }
 }
-
-@media (display-mode: standalone) {
-  body>#toolbar {
-    padding-bottom: env(safe-area-inset-bottom);
-  }
-}
