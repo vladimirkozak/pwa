@@ -20,10 +20,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  document.querySelector("#btnLearn").addEventListener("click", (event) => {
-    location.href = "https://frontendmasters.com";
-  });
-
   let bipEvent = null;
   window.addEventListener("beforeinstallprompt", (event) => {
     event.preventDefault();
@@ -37,7 +33,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       // incompatible browser, your PWA is not passing the criteria, the user has already installed the PWA
       //TODO: show the user information on how to install the app
       alert(
-        "To install the app look for Add to Homescreen or Install in your browser's menu"
+        "Чтобы установить приложение, найдите «Добавить на главный экран» или «Установить» в меню браузера"
       );
     }
   });
