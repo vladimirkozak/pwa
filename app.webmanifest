@@ -8,12 +8,12 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "icons/icon-512.png",
+      "src": "/build/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "icons/icon-1024.png",
+      "src": "/build/icons/icon-1024.png",
       "sizes": "1024x1024",
       "type": "image/png",
       "purpose": "maskable"
@@ -22,8 +22,8 @@
   "description": "",
   "screenshots": [
     {
-      "src": "icons/8gEFyiIJp7Y.jpg",
-      "sizes": "1024x1024",
+      "src": "/build/icons/8gEFyiIJp7Y.jpg",
+      "sizes": "972x2160",
       "type": "image/png",
       "purpose": "maskable"
     }
