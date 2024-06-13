@@ -1,5 +1,32 @@
 var notes = [];
 
+// Render the notes on the DOM
+function renderNotes() {
+  const ul = document.querySelector("#notes");
+  ul.innerHTML = "";
+  notes.forEach((note, index) => {
+    // Create the note LI
+    const li = document.createElement("li");
+    li.innerHTML = note;
+    // Delete element for each note
+    const deleteButton = document.createElement("a");
+    deleteButton.innerHTML = '<span class="icon">delete</span>';
+    deleteButton.addEventListener("click", (event) => {
+      if (confirm("Do you want to delete this note?")) {
+        notes.splice(index, 1);
+        renderNotes();
+        save();
+      }
+    });
+    li.appendChild(deleteButton);
+    ul.appendChild(li);
+  });
+}
+
+function save() {
+  localStorage.setItem("notes", JSON.stringify(notes));
+}
+
 // Registering all the event handlers when the page loads
 document.addEventListener("DOMContentLoaded", (event) => {
   if (localStorage.getItem("notes")) {
@@ -50,29 +77,3 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 
-// Render the notes on the DOM
-function renderNotes() {
-  const ul = document.querySelector("#notes");
-  ul.innerHTML = "";
-  notes.forEach((note, index) => {
-    // Create the note LI
-    const li = document.createElement("li");
-    li.innerHTML = note;
-    // Delete element for each note
-    const deleteButton = document.createElement("a");
-    deleteButton.innerHTML = '<span class="icon">delete</span>';
-    deleteButton.addEventListener("click", (event) => {
-      if (confirm("Do you want to delete this note?")) {
-        notes.splice(index, 1);
-        renderNotes();
-        save();
-      }
-    });
-    li.appendChild(deleteButton);
-    ul.appendChild(li);
-  });
-}
-
-function save() {
-  localStorage.setItem("notes", JSON.stringify(notes));
-}

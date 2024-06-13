@@ -3,7 +3,7 @@
   "short_name": "Roznica",
   "start_url": "./",
   "orientation": "portrait",
-  "theme_color": "orange",
+  "theme_color": "#fff",
   "scope": "./",
   "display": "standalone",
   "icons": [
@@ -22,7 +22,7 @@
   "description": "",
   "screenshots": [
     {
-      "src": "icons/icon-1024.png",
+      "src": "icons/8gEFyiIJp7Y.jpg",
       "sizes": "1024x1024",
       "type": "image/png",
       "purpose": "maskable"
