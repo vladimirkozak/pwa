@@ -1,0 +1,23 @@
+{
+  "name": "pwa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "workbox injectManifest workbox-config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladimirkozak/pwa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladimirkozak/pwa/issues"
+  },
+  "homepage": "https://github.com/vladimirkozak/pwa#readme",
+  "devDependencies": {
+    "workbox-cli": "^7.1.0"
+  }
+}
