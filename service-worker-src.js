@@ -1,3 +1,4 @@
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.5.3/workbox-sw.js');
 // const assets = [
 //   "/",
 //   "styles.css",
@@ -13,3 +14,5 @@
 //     })
 //   );
 // });
+
+workbox.precaching.precacheAndRoute(self.__WB_MANIFEST);
