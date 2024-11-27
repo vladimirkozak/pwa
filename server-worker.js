@@ -1,0 +1,7 @@
+importScripts('/workbox/workbox-sw.js');
+
+if (workbox) {
+    console.log(`Workbox is loaded`);
+    workbox.precaching.precacheAndRoute([{"revision":"a34f1a4bbf981f4d2a1b79db450615fe","url":"app.js"},{"revision":"d41d8cd98f00b204e9800998ecf8427e","url":"dist/bundle.js"},{"revision":"d41d8cd98f00b204e9800998ecf8427e","url":"dist/main.js"},{"revision":"f9e7c3a8a8eb54191ffbcbd43207e1e8","url":"dist/service-worker.js"},{"revision":"845f371d4d042314e22f0d057b9d7818","url":"icons/8gEFyiIJp7Y.jpg"},{"revision":"d5c17160dfe28383b69ba3d71864dd68","url":"icons/icon-1024.png"},{"revision":"a5db9aa914c3fe1d8d9a3cdec39a271a","url":"icons/icon-512.png"},{"revision":"a8ea36d71d9d69bc02495b420ba153c1","url":"index.html"},{"revision":"d41d8cd98f00b204e9800998ecf8427e","url":"src/index.js"},{"revision":"1fe01b02769c76ff322b363b0c7185d7","url":"styles.css"},{"revision":"61ca183249a52af228618f0cd5e8b24f","url":"sw-register.js"},{"revision":"a787fce5bf5490a04c63d7e915694154","url":"webpack.config.js"},{"revision":"8eebf4e089690b699466e9fe0c39e5c5","url":"workbox-config.js"},{"revision":"44605b3298f863c66fd2b7279bdab09c","url":"workbox/workbox-core.prod.js"},{"revision":"1ee8614c2bb12239557758c1c7937973","url":"workbox/workbox-routing.prod.js"},{"revision":"0d0e35095cb9f75428af9f1dd6154ea9","url":"workbox/workbox-strategies.prod.js"},{"revision":"fe8397148952de60d1a867fad1c9e11e","url":"workbox/workbox-sw.js"}]);
+}
+

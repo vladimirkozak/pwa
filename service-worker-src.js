@@ -1,4 +1,4 @@
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.5.3/workbox-sw.js');
+importScripts('/workbox/workbox-sw.js');
 // const assets = [
 //   "/",
 //   "styles.css",
@@ -15,4 +15,8 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.5.3/workbox
 //   );
 // });
 
-workbox.precaching.precacheAndRoute(self.__WB_MANIFEST);
+if (workbox) {
+    console.log(`Workbox is loaded`);
+    workbox.precaching.precacheAndRoute(self.__WB_MANIFEST);
+}
+
